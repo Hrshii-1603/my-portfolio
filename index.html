@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="Harshita - UI/UX Designer and Graphic Designer portfolio">
+<title>Harshita Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,500..800,100&family=Work+Sans:wght@400;500;600&family=Caveat:wght@600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<header id="top">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a href="#home" class="logo">Harshita<span>.</span></a>
+      <ul class="links" id="links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+      <a href="#contact" class="btn sm hire mag" id="hire">Contact Me</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links"><i></i><i></i><i></i></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home">
+  <div class="wrap hero">
+    <div class="hero-text">
+      <span class="chip"><span class="wave" aria-hidden="true">👋</span> Hi, I'm Harshita</span>
+      <h1 aria-label="UI/UX Designer & Graphic Designer">
+        <span class="w" style="animation-delay:.05s">UI/UX</span> <span class="w" style="animation-delay:.15s">Designer</span> <span class="w" style="animation-delay:.25s">&amp;</span><br>
+        <span class="w" style="animation-delay:.35s"><em>Graphic</em></span> <span class="w" style="animation-delay:.45s">Designer</span>
+      </h1>
+      <p class="lead">Building next generation digital experiences where innovation meets bold design with a focus on simplicity, refinement and lasting impact.</p>
+      <div class="ctas">
+        <a href="#work" class="btn mag">View My Work <span class="arr">➜</span></a>
+        <a href="https://drive.google.com/file/d/1WrMnftQb3C-EYvt72pkqkUIDHMUMHyrZ/view?usp=drivesdk" target="_blank" rel="noopener" class="btn cv mag" id="cvBtn">Download CV <span class="dl" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></span></a>
+      </div>
+    </div>
+    <div class="hero-art" id="heroArt">
+      <div class="blob"></div>
+      <div class="portrait" id="portrait"><img src="images/avatar.jpg" alt="Illustrated portrait of Harshita"></div>
+      <svg class="doodle d-star" viewBox="0 0 24 24"><path d="M12 1l2.6 7.4L22 11l-7.4 2.6L12 21l-2.6-7.4L2 11l7.4-2.6z" fill="#FFD27A" stroke="#3B3350" stroke-width="1.4"/></svg>
+      <svg class="doodle d-star2" viewBox="0 0 24 24"><path d="M12 1l2.6 7.4L22 11l-7.4 2.6L12 21l-2.6-7.4L2 11l7.4-2.6z" fill="#F4A6C6" stroke="#3B3350" stroke-width="1.6"/></svg>
+      <svg class="doodle d-heart" viewBox="0 0 32 30"><path d="M16 28S2 19 2 10a7 7 0 0114-2 7 7 0 0114 2c0 9-14 18-14 18z" fill="#F4A6C6" stroke="#3B3350" stroke-width="2"/></svg>
+      <svg class="doodle d-cloud" viewBox="0 0 70 40"><path d="M14 36a11 11 0 01-1-22 14 14 0 0127-4 10 10 0 0116 8 9 9 0 01-2 18z" fill="#FCFAFF" stroke="#3B3350" stroke-width="2"/></svg>
+      <div class="tag">That's me!
+        <svg viewBox="0 0 60 40" fill="none" stroke="#3B3350" stroke-width="2" stroke-linecap="round"><path d="M4 34c16 2 34-6 44-24"/><path d="M38 10l10 0 1 10"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="band">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">things I've made</span>
+      <h2>Selected Work</h2>
+    </div>
+    <div class="work-list" id="workList"></div>
+  </div>
+</section>
+
+<section id="about" class="plain">
+  <div class="wrap about">
+    <div class="about-text rv l">
+      <span class="eyebrow">hello again</span>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.5rem)">A Little Bit About Me</h2>
+      <p>I work at the intersection of <span class="hl">UI/UX</span> and <span class="hl">Graphic design</span>, crafting digital experiences that are clean, thoughtful, and engaging. I believe in design that communicates clearly, feels natural, and creates a meaningful connection with users.</p>
+      <ul class="values" aria-label="What my work aims to be">
+        <li>Clean</li><li>Thoughtful</li><li>Engaging</li>
+      </ul>
+    </div>
+    <div class="about-art rv r">
+      <div class="stack" id="stack"></div>
+      <span class="note">pixels + print</span>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="band">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow">what I do</span>
+      <h2>Skills &amp; Expertise</h2>
+    </div>
+    <div class="skills" id="skillGrid"></div>
+
+    <div class="sec-head center rv" style="margin:88px 0 24px">
+      <span class="eyebrow">my toolbox</span>
+      <h2>Tools I Use</h2>
+    </div>
+    <div class="tools-wrap rv s">
+      <div class="marquee"><div class="track" id="t1"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="plain">
+  <div class="wrap">
+    <div class="cta rv s">
+      <svg class="cta-star a" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1l2.6 7.4L22 11l-7.4 2.6L12 21l-2.6-7.4L2 11l7.4-2.6z"/></svg>
+      <svg class="cta-star b" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1l2.6 7.4L22 11l-7.4 2.6L12 21l-2.6-7.4L2 11l7.4-2.6z"/></svg>
+      <div class="cta-text">
+        <span class="eyebrow">say hi!</span>
+        <h2>Let's Work <span>Together</span></h2>
+        <p>Have a project in mind? I'd love to hear about it. Let's create something amazing together.</p>
+      </div>
+      <div class="cta-side">
+        <a class="btn cv mag" id="getInTouch" href="https://wa.me/919811591462" target="_blank" rel="noopener">Get in Touch <span class="arr">➜</span></a>
+        <div class="socials" id="socials"></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#home" class="logo">Harshita<span>.</span></a>
+        <p>Designing meaningful digital experiences.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul id="footSoc"></ul>
+      </div>
+    </div>
+    <div class="copy"><span>© 2026 Harshita. All rights reserved.</span><span>Designed by <b>Harshita</b></span></div>
+  </div>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="sheet" style="position:relative">
+    <img id="mImg" src="" alt="">
+    <div class="sheet-body">
+      <span class="eyebrow" id="mNum"></span>
+      <h3 id="mTitle"></h3>
+      <p id="mDesc"></p>
+      <a class="btn cv mag" id="mLink" href="#" target="_blank" rel="noopener" style="justify-self:start">View Project <span class="arr">↗</span></a>
+      <div class="sheet-nav">
+        <button class="btn sm ghost" id="mPrev">← Previous</button>
+        <button class="btn sm" id="mNext">Next →</button>
+      </div>
+    </div>
+    <button class="x" id="mClose" aria-label="Close">×</button>
+  </div>
+</div>
+
+<button class="totop" id="totop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
