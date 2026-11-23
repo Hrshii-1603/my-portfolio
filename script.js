@@ -16,7 +16,7 @@ const IMG = {
 };
 
 const PROJECTS = [
-  {t:"Tom & Jerry Fan Website", k:"Interactive Web Design", img:"tomjerry", link:"https://hrshii-1603.github.io/tom-jerry-website/", cta:"Visit Website", d:"A playful, responsive fan tribute to the classic cat-and-mouse duo, with a hidden cheese hunt, flip-card character files, trivia, a quiz and a Team Tom vs Team Jerry poll."},
+  {t:"Tom & Jerry Fan Website", k:"Interactive Web Design", img:"tom", link:"https://hrshii-1603.github.io/tom-jerry-website/", cta:"Visit Website", d:"A playful, responsive fan tribute to the classic cat-and-mouse duo, with a hidden cheese hunt, flip-card character files, trivia, a quiz and a Team Tom vs Team Jerry poll."},
   {t:"Infly Entertainment Music Website", k:"Responsive Web Design", img:"infly", link:"https://inflyentertainment.netlify.app/", cta:"Visit Website", d:"A responsive website for Infly Entertainment, a music promotion agency for Punjabi, Folk, Hindi and Haryanvi artists, in a bold, modern layout."},
   {t:"Xntrova Digital Marketing Website", k:"Landing Page", img:"xntrova", link:"https://www.behance.net/gallery/256709553/Digital-Marketing-Website", cta:"View on Behance", d:"A clean, conversion-focused landing page for Xntrova, a digital marketing agency, presenting its SEO, ads, social media and web services with clear calls to action."},
   {t:"Luxury Salon Website", k:"Web Design", img:"p6", link:"https://www.behance.net/gallery/243302317/Luxury-Salon-Website", cta:"View on Behance", d:"A responsive luxury salon website designed to deliver an elegant and smooth user experience."},
