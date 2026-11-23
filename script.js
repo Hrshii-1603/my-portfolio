@@ -10,15 +10,15 @@ const IMG = {
   "p1": "images/dark magazine.png",
   "p2": "images/fashion magazine.png",
   "p6": "images/luxury website.jpg",
+  "tomjerry": "images/tom_jerry_website.jpg",
   "infly": "images/Infly_website.png",
-  "jewel": "images/jewelery website.png",
   "xntrova": "images/digital_website.png"
 };
 
 const PROJECTS = [
-  {t:"Infly Entertainment Music Website", k:"Responsive Web Design", img:"infly", link:"https://inflyentertainment.netlify.app/", cta:"Visit Website", d:"A responsive website for Infly Entertainment, a music promotion and artist development agency for Punjabi, Folk, Hindi and Haryanvi artists. It brings together their services, featured artists, a five-step growth process and campaign case studies in a bold, modern layout."},
-  {t:"Xntrova Digital Marketing Website", k:"Landing Page", img:"xntrova", link:"https://www.behance.net/gallery/256709553/Digital-Marketing-Website", cta:"View on Behance", d:"A clean, conversion-focused landing page for Xntrova, a digital marketing and technology agency. It presents SEO, performance ads, social media and web services with a bold headline, clear calls to action and trust points that guide visitors toward a free growth audit."},
-  {t:"E-commerce Jewelry Website", k:"E-commerce", img:"jewel", link:"https://www.behance.net/gallery/252994701/E-commerce-Jewelry-Website", cta:"View on Behance", d:"An elegant e-commerce jewelry website designed to showcase fine pieces beautifully, with easy category browsing and a smooth, refined shopping experience."},
+  {t:"Tom & Jerry Fan Website", k:"Interactive Web Design", img:"tomjerry", link:"https://hrshii-1603.github.io/tom-jerry-website/", cta:"Visit Website", d:"A playful, responsive fan tribute to the classic cat-and-mouse duo, with a hidden cheese hunt, flip-card character files, trivia, a quiz and a Team Tom vs Team Jerry poll."},
+  {t:"Infly Entertainment Music Website", k:"Responsive Web Design", img:"infly", link:"https://inflyentertainment.netlify.app/", cta:"Visit Website", d:"A responsive website for Infly Entertainment, a music promotion agency for Punjabi, Folk, Hindi and Haryanvi artists, in a bold, modern layout."},
+  {t:"Xntrova Digital Marketing Website", k:"Landing Page", img:"xntrova", link:"https://www.behance.net/gallery/256709553/Digital-Marketing-Website", cta:"View on Behance", d:"A clean, conversion-focused landing page for Xntrova, a digital marketing agency, presenting its SEO, ads, social media and web services with clear calls to action."},
   {t:"Luxury Salon Website", k:"Web Design", img:"p6", link:"https://www.behance.net/gallery/243302317/Luxury-Salon-Website", cta:"View on Behance", d:"A responsive luxury salon website designed to deliver an elegant and smooth user experience."},
   {t:"Dark Luxury Magazine Design", k:"Editorial", img:"p1", link:"https://www.behance.net/gallery/246849961/Dark-Luxury-Magazine-Design", cta:"View on Behance", d:"A bold, elegant magazine cover showcasing modern Indian fashion with flowing red fabric and a classy, powerful aesthetic."},
   {t:"A Fashion Magazine", k:"Editorial", img:"p2", link:"https://www.behance.net/gallery/246849543/A-Fashion-Magazine", cta:"View on Behance", d:"A premium magazine cover series for The Fashion Vila exploring 2026 trends in a bold “Dark Luxury” style with clean, modern typography."}
@@ -67,7 +67,7 @@ function equalCards(){
 }
 equalCards(); addEventListener("resize",equalCards);
 (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(equalCards);
-const POLA = [{i:3,r:"-9deg",x:"-22%",y:"4%",r2:"-14deg",x2:"-42%",y2:"6%"},{i:2,r:"7deg",x:"20%",y:"6%",r2:"12deg",x2:"40%",y2:"8%"},{i:4,r:"-2deg",x:"0%",y:"-6%",r2:"0deg",x2:"0%",y2:"-12%"}];
+const POLA = [{i:3,r:"-9deg",x:"-22%",y:"4%",r2:"-14deg",x2:"-42%",y2:"6%"},{i:0,r:"7deg",x:"20%",y:"6%",r2:"12deg",x2:"40%",y2:"8%"},{i:4,r:"-2deg",x:"0%",y:"-6%",r2:"0deg",x2:"0%",y2:"-12%"}];
 $("#stack").innerHTML = POLA.map(o=>`<button class="polaroid" data-i="${o.i}" style="--r:${o.r};--x:${o.x};--y:${o.y};--r2:${o.r2};--x2:${o.x2};--y2:${o.y2}" aria-label="Open ${PROJECTS[o.i].t}"><img src="${IMG[PROJECTS[o.i].img]}" alt=""><span>${PROJECTS[o.i].k}</span></button>`).join("");
 $("#skillGrid").innerHTML = SKILLS.map((s,i)=>`
   <div class="skill rv" style="--c:${s.c};transition-delay:${(i%3)*.08}s">
