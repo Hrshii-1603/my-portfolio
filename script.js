@@ -10,7 +10,7 @@ const IMG = {
   "p1": "images/dark magazine.png",
   "p2": "images/fashion magazine.png",
   "p6": "images/luxury website.jpg",
-  "tomjerry": "images/tom_jerry_website.jpg",
+  "tomjerry": "images/tom.jpg",
   "infly": "images/Infly_website.png",
   "xntrova": "images/digital_website.png"
 };
